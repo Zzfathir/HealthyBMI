@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- By Ali Aslan -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./img/logo-healthy.png">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Calculator | HealthyBMI</title>
+  </head>
+  <body>
+    
+    <!-- Navbar -->
+    <header>
+      <nav class="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="#home" class="flex items-center">
+            <img src="./img/logo-healthy.png" class="h-7 mr-3" alt="logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap">HealthyBMI</span>
+          </a>
+          <div class="flex md:order-2">
+            <a href="#calculator" type="button" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">Let's Calculate</a>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+              </svg>
+            </button>
+          </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+              <li>
+                <a href="#home" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">About</a>
+              </li>
+              <li>
+                <a href="#clients" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Clients</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Halaman Jumbotron -->
+    <section id="home" class="bg-white pt-10 bg-[url('/img/bg-jumbotron.png')]">
+      <div class="py-16 px-4 mx-auto max-w-screen-xl text-center lg:pt-16 z-10 relative">
+        <a href="#calculator" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-green-700 bg-green-100 rounded-full" >
+          <span class="text-xs bg-green-600 rounded-full text-white px-4 py-1.5 mr-3">Go</span>
+           <span data-aos-duration="1000" data-aos="fade-right" class="text-sm font-medium">Keep well! by checking your BMI</span>
+          <svg data-aos-duration="1000" data-aos="fade-right" class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+          </svg>
+        </a>
+        <h1 class="mb-4 pt-20 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">Keep your body ideal</h1>
+        <p class=" text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">By using HealthyBMI you can see whether your body is ideal, just by inputting your gender, weight and height</p>
+      </div>
+    </section>
+    <!-- Panah ke bawah -->
+    <a href="#about" class="flex justify-center"><img class="w-48" src="./img/arrowdownn.gif" alt=""></a>
+
+    <!-- Halaman About -->
+    <section id="about" class="bg-white">
+      <h1 class="text-3xl pt-[115px] text-center font-bold text-green-700">About BMI</h1>
+      <div class="gap-16 items-center pb-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:pb-16 lg:px-6">
+        <div class="font-light text-gray-500 sm:text-lg">
+          <h2 class="text-2xl tracking-tight font-extrabold text-green-900" data-aos="fade-right" data-aos-duration="600">What does BMI mean?</h2>
+          <p class="mb-5 text-base" data-aos="fade-right" data-aos-duration="600">Body Mass Index (BMI) memberikan perkiraan apakah seseorang kekurangan berat badan, kelebihan berat badan, atau berat badan ideal. Berat badan di luar kisaran ideal dapat meningkatkan risiko kesehatan.</p>
+
+          <h2 class="text-2xl tracking-tight font-extrabold text-green-900" data-aos="fade-right" data-aos-duration="800">Limitations of BMI</h2>
+          <p class="mb-5 text-base" data-aos="fade-right" data-aos-duration="800">BMI tidak memberikan informasi tentang komposisi tubuh sehingga tidak berlaku untuk wanita hamil, anak-anak, kelompok etnis tertentu, atau mereka yang bertubuh atletis. Usia juga akan mempengaruhi pembacaan.</p>
+
+          <h2 class="text-2xl tracking-tight font-extrabold text-green-900" data-aos="fade-right" data-aos-duration="1000">How do I calculate BMI?</h2>
+          <p id="clients" class="mb-5 text-base" data-aos="fade-right" data-aos-duration="1000">Tulis umur kalian, pilih jenis kelamin, masukan tinggi dan berat badan kalian di form dibawah ini. Kalian akan mengetahui berapa BMI kalian, ada beberapa tips dan berat ideal yang kalian harus capai.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+          <img class="w-full" src="./img/about-2.jpg" alt="office content 1" data-aos="fade-up" data-aos-duration="800" />
+          <img class="mt-4 lg:mt-10 w-full" src="./img/about-1.jpg" alt="office content 2" data-aos="fade-up" data-aos-duration="400" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Halaman Clients -->
+    <section id="clients" class="bg-gray-800 pt-36 pb-32">
+      <div>
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 text-center">
+            <h4 class="mb-2 text-lg font-semibold text-green-700">Clients</h4>
+            <h2 class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl">Who Have Worked Together</h2>
+            <p class="text-md text-gray-400 md:text-lg">Beberapa mitra yang sudah bekerja sama dengan kami(dummy)</p>
+          </div>
+        </div>
+
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <a class="mx-4 max-w-[200px] py-4 opacity-60 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8" href="#">
+              <img src="./img/logo_kalbe.svg" alt="kalabe" />
+            </a>
+            <a class="mx-4 max-w-[200px] py-4 opacity-60 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8" href="#">
+              <img src="./img/logo-metros.png" alt="metro" />
+            </a>
+            <a class="mx-4 max-w-[200px] py-4 opacity-60 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8" href="#">
+              <img src="./img/logo-sidomuncul.svg" alt="sidomuncul" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Halaman Calculator -->
+    <section id="calculator" class="bg-gradient-to-b from-green-50 py-7">
+      <h1 class="text-3xl mt-4 text-center font-bold text-green-700">BMI's Calculator</h1>
+      <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-8 lg:px-6">
+        <div id="container">
+          <img data-aos="fade-right"  data-aos-duration="600" src="./img/Healthybots.png" class="w-80" alt="">
+        </div>
+        <div class="flex justify-center items-center">
+          <div data-aos="fade-left"  data-aos-duration="600" class="text-center rounded-lg mx-5 shadow-lg w-[500px]">
+            <h1 class="font-bold mt-5 -left- text-xl">Check your BMI here</h1>
+            <div class="px-6 flex flex-col items-center mt-5">
+              <div class="relative flex justify-center z-0 w-44 mb-6 group bg-white rounded-lg my-3 py-5">
+                <input type="number" name="height" id="age" class="text-center block py-2.5 px-0 w-[150px] text-lg font-bold text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="height" class="peer-focus:font-medium absolute text-md text-gray-800 font-bold duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Age</label>
+              </div>
+
+              <div class="flex justify-around items-center bg-white rounded-lg p-8">
+                <div class="flex items-center mr-[100px]">
+                  <input required id="m" type="radio" name="radio" class="w-5 h-5 cursor-pointer text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                  <label for="m" class="ml-2 text-lg font-medium cursor-pointer text-gray-900 dark:text-gray-500">Male</label>
+                </div>
+
+                <div class="flex items-center mr-4">
+                  <input required id="f" type="radio" name="radio" class="w-5 h-5 cursor-pointer text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                  <label for="f" class="ml-2 text-lg font-medium cursor-pointer text-gray-900 dark:text-gray-500">Female</label>
+                </div>
+              </div>
+
+              <div class="flex justify-around items-center">
+                <div class="relative flex justify-center z-0 w-44 mb-6 group bg-white rounded-lg my-3 py-5 mr-5">
+                  <input type="number" name="height" id="height" class="text-center block py-2.5 px-0 w-[150px] text-lg font-bold text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                  <label for="height" class="peer-focus:font-medium absolute text-md text-gray-800 font-bold duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Height(cm)</label>
+                </div>
+
+                <div class="relative flex justify-center z-0 w-44 mb-6 group bg-white rounded-lg my-3 py-5">
+                  <input type="number" name="weight" id="weight" class="text-center block py-2.5 px-0 w-[150px] text-lg font-bold text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                  <label for="weight" class="peer-focus:font-medium absolute text-md text-gray-800 font-bold duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Weight(kg)</label>
+                </div>
+              </div>
+              <button type="button" class="calculate w-80 rounded-lg p-3 bg-green-500 text-white font-bold mb-5 hover:bg-green-600" id="submit" onclick="calculate();">Calculate BMI</button>
+            </div>
+            <div class="font-extrabold">
+              <p class="text-xl">Your BMI is</p>
+              <div class="text-2xl text-green-600 mb-3" id="result">00.00</div>
+              <div class="comment justify-center"></div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div id="myModal" tabindex="-1" class="fixed inset-0 items-center justify-center top-0 bg-gray-900 bg-opacity-50 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative w-full max-w-md max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 modal-content">
+                  <div class="p-6 text-center">
+                      <svg class="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                      </svg>
+                      <h3 id="modalText" class="mb-5 text-lg font-normal text-red-400"></h3>
+                      <button type="button" class="close text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Ok, saya isi</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+  </body>
+</html>
